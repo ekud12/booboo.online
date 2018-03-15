@@ -19,12 +19,12 @@ export class AppComponent implements OnInit {
       val => {
         this.quote = val['contents'].quote;
         this.author = val['contents'].author;
-        this.picSrc = `../assets/pics/19.jpg`;
+        this.picSrc = `../assets/pics/${Math.floor(
+          Math.random() * 31 + 1
+        )}.jpg`;
       },
       () => {},
       () => setTimeout(() => (this.loaded = true), 1500)
     );
-
-    // this.picSrc = `../assets/pics/${Math.floor(Math.random() * 31 + 1)}.jpg`;
   }
 }
