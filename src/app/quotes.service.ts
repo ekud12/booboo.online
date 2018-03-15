@@ -12,7 +12,7 @@ export class QuotesService {
   getRandomQuote(): Observable<any> {
     const secret = (Math.random() * 10001).toString();
     return this.http.get(
-      'https://quotes.rest/quote/search.json?category=romance&api_key=vjzNVG2xJ00mWtqipQDRAgeF&maxlength=150&sec=' +
+      'https://quotes.rest/quote/search.json?category=love&api_key=vjzNVG2xJ00mWtqipQDRAgeF&maxlength=220&sec=' +
         secret
     );
   }
