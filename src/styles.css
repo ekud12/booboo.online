@@ -59,18 +59,11 @@ body {
     background-size: cover;
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(
-      206deg,
-      #b60000,
-      #a7a7a7,
-      #210e6d,
-      #ffa053,
-      #6c1cad
-    );
-    background-size: 1100% 1100%;
+    background: linear-gradient(45deg #b60000 , #564597, #ffa053);
+    background-size: 1200% 1200%;
 
-    -webkit-animation: AnimationName 15s ease infinite;
-    -moz-animation: AnimationName 15s ease infinite;
-    animation: AnimationName 15s ease infinite;
+    -webkit-animation: AnimationName 25s ease infinite;
+    -moz-animation: AnimationName 25s ease infinite;
+    animation: AnimationName 25s ease infinite;
   }
 }
