@@ -2,20 +2,6 @@
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 @import url('https://fonts.googleapis.com/css?family=Mina|Montserrat');
 
-@media (max-width: 480px) {
-  body {
-    background-size: cover;
-    margin: 0 auto;
-    font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(206deg, #ff5353, #ffe553, #ffa053);
-    background-size: 1200% 1200%;
-
-    -webkit-animation: AnimationName 10s ease infinite;
-    -moz-animation: AnimationName 10s ease infinite;
-    animation: AnimationName 10s ease infinite;
-  }
-}
-
 body {
   background-size: cover;
   margin: 0 auto;
@@ -23,8 +9,7 @@ body {
   background: linear-gradient(
     206deg,
     #ff5353,
-    #ffe553,
-    #53a3ff,
+    #ffd900,
     #7553ff,
     #ffa053,
     #ff5378
@@ -67,5 +52,25 @@ body {
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    background-size: cover;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(
+      206deg,
+      #b60000,
+      #a7a7a7,
+      #210e6d,
+      #ffa053,
+      #6c1cad
+    );
+    background-size: 1100% 1100%;
+
+    -webkit-animation: AnimationName 15s ease infinite;
+    -moz-animation: AnimationName 15s ease infinite;
+    animation: AnimationName 15s ease infinite;
   }
 }
