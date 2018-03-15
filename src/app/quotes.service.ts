@@ -11,7 +11,7 @@ export class QuotesService {
 
   getRandomQuote(): Observable<any> {
     return this.http.get(
-      'http://quotes.rest/quote/search.json?category=love&api_key=vjzNVG2xJ00mWtqipQDRAgeF&maxlength=150'
+      'https://quotes.rest/quote/search.json?category=love&api_key=vjzNVG2xJ00mWtqipQDRAgeF&maxlength=150'
     );
   }
 }
