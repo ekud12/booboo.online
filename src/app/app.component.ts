@@ -17,6 +17,7 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.quoteService.getRandomQuote().subscribe(
       val => {
+        console.log(val);
         this.quote = val['contents'].quote;
         this.author = val['contents'].author;
         this.picSrc = `../assets/pics/${Math.floor(
@@ -24,7 +25,7 @@ export class AppComponent implements OnInit {
         )}.jpg`;
       },
       () => {},
-      () => setTimeout(() => (this.loaded = true), 1500)
+      () => setTimeout(() => (this.loaded = true), 300)
     );
   }
 }
