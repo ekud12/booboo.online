@@ -1,19 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
-@import url('https://fonts.googleapis.com/css?family=Mina|Montserrat');
 
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/Montserrat-Regular.ttf');
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/Montserrat-Bold.ttf');
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/Montserrat-Italic.ttf');
+}
 body {
   background-size: cover;
   margin: 0 auto;
   font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(
-    206deg,
-    #ff5353,
-    #ffd900,
-    #7553ff,
-    #ffa053,
-    #ff5378
-  );
+  background: linear-gradient(206deg, #ff5353, #ffd900, #7553ff, #ffa053, #ff5378);
   background-size: 1200% 1200%;
 
   -webkit-animation: AnimationName 70s ease infinite;
@@ -59,7 +63,7 @@ body {
     background-size: cover;
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(45deg #b60000 , #564597, #ffa053);
+    background: linear-gradient(45deg #b60000, #564597, #ffa053);
     background-size: 1200% 1200%;
 
     -webkit-animation: AnimationName 25s ease infinite;
